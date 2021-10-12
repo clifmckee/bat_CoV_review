@@ -9,4 +9,4 @@ Additional large files available by request (mailto:clifton.mckee@gmail.com):
 'mammterr.RData'
 'MAMMALS_TERRESTRIAL_ONLY.shp'
 
-![./Results/research_pace.png]
+![](./Results/research_pace.png)
