@@ -8,3 +8,5 @@ Shape files for bat geographic ranges (and all other terrestrial mammals) are av
 Additional large files available by request (mailto:clifton.mckee@gmail.com):
 'mammterr.RData'
 'MAMMALS_TERRESTRIAL_ONLY.shp'
+
+![research_pace.png]
