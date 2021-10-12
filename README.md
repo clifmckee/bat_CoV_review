@@ -10,3 +10,7 @@ Additional large files available by request (mailto:clifton.mckee@gmail.com):
 'MAMMALS_TERRESTRIAL_ONLY.shp'
 
 ![](./Results/research_pace.png)
+
+![](./Results/bat_sampling_summary.png)
+
+![](./Results/map_overlap.png)
