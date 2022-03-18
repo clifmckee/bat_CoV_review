@@ -1,7 +1,7 @@
 ##########################
 # Code for assessing the pace of coronavirus publications
-# R version 4.1.1 "Kick Things"
-# Works: 2021-10-08
+# R version 4.1.2 "Bird Hippie"
+# Works: 2022-03-17
 ##########################
 
 # Necessary packages
@@ -10,16 +10,14 @@ library(tidyr)
 library(readxl)
 library(ggplot2)
 library(cowplot)
-
-# Set working directory
-setwd("~/Dropbox/JHSPH postdoc/Projects/Bat coronavirus ecology review paper")
+library(here)
 
 # Not in
 "%ni%" <- Negate("%in%")
 
 # Read in data on studies
-studies <- read_excel("./Data/bat_coronavirus_review.xlsx", sheet = 1, trim_ws = TRUE)
-hosts <- read_excel("./Data/bat_coronavirus_review.xlsx", sheet = 3, trim_ws = TRUE)
+studies <- read_excel("../Data/bat_coronavirus_review.xlsx", sheet = 1, trim_ws = TRUE)
+hosts <- read_excel("../Data/bat_coronavirus_review.xlsx", sheet = 3, trim_ws = TRUE)
 
 # Filter to studies that produced sequences or attempted to produce sequences but had zero positives
 studies_filter <- studies %>%
@@ -47,4 +45,4 @@ ggplot() +
         axis.text.y.right = element_text(color = "#D55E00"),
         axis.text.x = element_text(angle = 45, hjust = 1))
 # Save to file
-ggsave("./Results/research_pace.png", bg = "white", width = 6, height = 4, units = "in", dpi = 300)
+ggsave("../Results/research_pace.png", bg = "white", width = 6, height = 4, units = "in", dpi = 300)

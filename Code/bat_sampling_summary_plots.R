@@ -1,7 +1,7 @@
 ##########################
 # Code for plotting CoV biogeography and sampling patterns
-# R version 4.1.1 "Kick Things"
-# Works: 2021-10-08
+# R version 4.1.2 "Bird Hippie"
+# Works: 2022-03-17
 ##########################
 
 # # Installing ggtree package
@@ -17,17 +17,15 @@ library(ggtree)
 library(reshape2)
 library(stringr)
 library(cowplot)
-
-# Set working directory
-setwd("~/Dropbox/JHSPH postdoc/Projects/Bat coronavirus ecology review paper")
+library(here)
 
 # Read in tree
-tree <- read.tree("./Data/bat_families.nwk")
+tree <- read.tree("../Data/bat_families.nwk")
 
 # Read in data
-sampling_sum <- read.csv("./Data/bat_species_sampling.csv")
+sampling_sum <- read.csv("../Data/bat_species_sampling.csv")
 
-fam_sum <- read.csv("./Data/bat_family_summary.csv")
+fam_sum <- read.csv("../Data/bat_family_summary.csv")
 
 # Melt
 m_sampling_sum <-
@@ -119,14 +117,14 @@ plot_grid(
 
 # Save to file
 ggsave(
-  filename = "./Results/bat_sampling_summary.pdf",
+  filename = "../Results/bat_sampling_summary.pdf",
   device = "pdf",
   width = 10,
   height = 7,
   units = "in"
 )
 ggsave(
-  filename = "./Results/bat_sampling_summary.png",
+  filename = "../Results/bat_sampling_summary.png",
   device = "png",
   width = 10,
   height = 7,
@@ -134,7 +132,7 @@ ggsave(
   units = "in"
 )
 ggsave(
-  filename = "./Results/bat_sampling_summary.tiff",
+  filename = "../Results/bat_sampling_summary.tiff",
   device = "tiff",
   width = 10,
   height = 7,

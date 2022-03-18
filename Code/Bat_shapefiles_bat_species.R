@@ -1,7 +1,7 @@
 ##########################
 # Code for mapping overlap between bat species
-# R version 4.1.1 "Kick Things"
-# Works: 2021-10-08
+# R version 4.1.2 "Bird Hippie"
+# Works: 2022-03-17
 ##########################
 
 # Filter to only the order Chiroptera

@@ -1,12 +1,12 @@
 ##########################
 # Code for determining which coronavirus host species distributions overlap
-# R version 4.1.1 "Kick Things"
-# Works: 2021-10-08
+# R version 4.1.2 "Bird Hippie"
+# Works: 2022-03-17
 ##########################
 
 # Read in coronavirus and bat species data
 CoV_spp <-
-  read.csv("./Data/bat_coronavirus_review - Host species, key subgenera.csv",
+  read.csv("../Data/bat_coronavirus_review - Host species, key subgenera.csv",
            stringsAsFactors = FALSE)
 all_subgenera <-
   c(
@@ -22,7 +22,7 @@ all_subgenera <-
 # Sort data
 CoV_spp_sorted <- CoV_spp %>%
   arrange(Coronavirus.subgenus, Bat.family, Bat.species)
-write.csv(CoV_spp_sorted, "./Data/key_subgenera_CoV_spp_sorted.csv")
+write.csv(CoV_spp_sorted, "../Data/key_subgenera_CoV_spp_sorted.csv")
 
 # Replace invalid bat species names
 CoV_spp$Bat.species[CoV_spp$Bat.species == "Hipposideros commersoni"] <-
