@@ -1,5 +1,5 @@
 # bat_CoV_review
-Files from Ruiz-Aravena et al (2021) Nat Rev Microbiol - [Ecology, evolution, and spillover of coronaviruses from bats](https://doi.org/10.1038/s41579-021-00652-2)
+Files from Ruiz-Aravena et al (2022) Nat Rev Microbiol - [Ecology, evolution, and spillover of coronaviruses from bats](https://doi.org/10.1038/s41579-021-00652-2)
 
 Review includes all studies of coronaviruses in bats published before 8 October 2021.
 
